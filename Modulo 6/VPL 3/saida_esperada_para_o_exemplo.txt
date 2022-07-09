@@ -1,0 +1,1 @@
+Erro: índice 2 não foi inicializado.

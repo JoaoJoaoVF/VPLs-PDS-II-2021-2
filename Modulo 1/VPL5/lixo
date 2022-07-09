@@ -1,0 +1,55 @@
+Processo *a = primeiro2;
+//Processo *aux = new Processo;
+// aux->nome = proc->nome;
+//   aux->id = proc->id;
+//   aux->prioridade = proc->prioridade;
+proc->proximo = nullptr;
+
+if (primeiro2 == nullptr)
+{
+    primeiro2 = proc;
+    ultimo = proc;
+    cout << "primeiro " << primeiro2->nome << " ultimo " << ultimo->nome << endl;
+}
+else
+{
+    Processo *p = primeiro2;
+    //int z = 0;
+
+    /*while (0 == 1 && p != nullptr) //&& p->prioridade > proc->prioridade)
+        {
+            cout << "proc " << proc->nome << " p " << p->nome << endl;
+            //proc->id =2, proc->nome == Proc2, proc->prioridade == 1
+            //p->id == 1,
+
+            //da o segmetation fault pq p->proximo é zero ai cai no nullptr
+            //    a = p;
+            p = p->proximo; //p->proximo = 0
+            //cout << "p nome " << p->nome << endl;
+            //   if (p->prioridade < a->prioridade)
+            //   {
+            //   }
+            //break;
+        }
+        if (p != nullptr)
+        {
+            cout << "p igual a nulo"
+                 << "proc nome " << proc->nome << endl;
+            //ultimo = proc;
+            proc->proximo = prime   iro;
+            primeiro = proc;
+        }
+        else
+        {
+            cout << "p diferente de nulo" << endl;
+            proc->proximo = p->proximo;
+            p->proximo = proc;
+        }
+        proc->proximo = primeiro;
+        primeiro = proc;
+        //   proc->proximo = p;
+        //ultimo = aux;
+        //cout << "p nome " << p->nome << " proc nome " << proc->nome << endl;*/
+    ultimo->proximo = proc;
+    ultimo = proc;
+}

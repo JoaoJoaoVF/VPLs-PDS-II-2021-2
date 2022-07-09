@@ -1,0 +1,8 @@
+std::istringstream iss(str);
+  std::vector<std::string> tokens{std::istream_iterator<std::string>{iss},
+                                  std::istream_iterator<std::string>{}};
+  for (auto it = tokens.end(); it != tokens.begin(); --it)
+  {
+    std::cout << "fsdfdss  " << (*it) << " ";
+  }
+  std::cout << std::endl;
